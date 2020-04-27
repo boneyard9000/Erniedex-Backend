@@ -1,0 +1,3 @@
+<beans>
+    <bean id="itemDao" class = "com.erniedexapplication.erniedexapplication.Repositories.ItemDao"></bean>
+</beans>
