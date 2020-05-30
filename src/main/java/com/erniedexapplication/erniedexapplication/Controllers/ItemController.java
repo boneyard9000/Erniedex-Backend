@@ -13,7 +13,7 @@ import java.util.Map;
 import java.util.UUID;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "http://localhost:8081")
 @RequestMapping("/item")
 public class ItemController {
 
@@ -49,5 +49,8 @@ public class ItemController {
     public List<SimpleItemDisplay> getGroupedItems(){
         return itemDao.getGroupedItems();
     }
+
+    @GetMapping()
+    public String helloWorld() {return "Hello World";}
 
 }
